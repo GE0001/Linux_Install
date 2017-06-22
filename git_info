@@ -1,0 +1,13 @@
+# create a new repository on the command line
+echo "# fileOrganiser" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/{githubUsername}/{projectName}.git
+git push -u origin master
+
+# or push directly on an existing project
+git remote add origin https://github.com//{githubUsername}/{projectName}.git
+git push -u origin master
+
+
