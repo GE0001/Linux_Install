@@ -1,0 +1,9 @@
+# "Screen" utility commands:
+screen -S subViewer			Create a screen with "subViewer" as a name
+screen -ls				List alla available Screens
+(ctrl) + (a) then (d)			Shortcut to detach the Screen
+screen -ls				List all available Screens
+echo $STY				Check that you are in a screen. (Returns the name of the screen)
+screen -rd 800				Reconnect to an available Screen by using its number
+screen -S subViewer -X quit		Terminate the referenced Screen
+
