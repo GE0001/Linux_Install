@@ -1,0 +1,30 @@
+# Check if this file is present
+which virtualenvwrapper.sh
+which virtualenvwrapper_lazy.sh
+
+# Make dir for venvs
+mkdir ~/.virtualenvs
+
+# Add venvr var to the shell
+# Add the following at the end of the .bashrc file
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Coding/Python/
+source /usr/local/bin/virtualenvwrapper.sh
+
+# How to use:
+# create a venv with (system) and another version of python
+mkvirtualenv Test1 
+mkvirtualenv -p $(which python3) Test1
+
+# check the packages and python version
+python --version
+pip freeze
+# Deactivate the venv
+deactivate
+# Start the venv
+workon Test1
+# Delete the venv
+rmvirtualenv Test1
+# Check this for details
+# https://stackoverflow.com/a/36096474
+

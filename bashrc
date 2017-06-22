@@ -117,3 +117,11 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# Python VenvWrapper
+# where to store our virtual envs
+export WORKON_HOME=$HOME/.virtualenvs
+# where projects will reside
+export PROJECT_HOME=$HOME/Coding/Python
+# where is the virtualenvwrapper.sh
+source /usr/local/bin/virtualenvwrapper.sh

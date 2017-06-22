@@ -1,7 +1,13 @@
+# Basic Stuff
 sudo apt-get install python3
 sudo apt-get install git
 sudo apt-get install xfce4-terminal 
 sudo apt-get install tree
 sudo apt-get install vim
 sudo apt-get install ssh
+
+# Install VirtualEnvWrapper for Python
+sudo apt-get install python-pip
+sudo pip install virtualenvwrapper
+sudo apt-get install python3 python3-pip
 
